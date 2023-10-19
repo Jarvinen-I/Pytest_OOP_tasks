@@ -92,7 +92,7 @@ class Triangle(Shape):
     def _validate_triangle(self):
         return all([type(i) in (int, float) for i in (self.x1, self.y1, self.x2, self.y2, self.x3, self.y3)]) \
             and (self.x1, self.y1) != (self.x2, self.y2) and (self.x1, self.y1) != (self.x3, self.y3) \
-            and (self.x1, self.y1) != (self.x3, self.y3)
+            and (self.x2, self.y2) != (self.x3, self.y3)
 
 
 class Rectangle(Shape):
