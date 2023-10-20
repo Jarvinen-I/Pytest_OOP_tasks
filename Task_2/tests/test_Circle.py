@@ -14,7 +14,7 @@ values = [(0, 1, 5),
 
 @pytest.mark.parametrize('values', values)
 def test_circle_good(values):
-    """This test is needed to make sure the method draw() work with correct arguments"""
+    """This test is needed to make sure the method draw() works with correct arguments"""
     x, y, radius = values
     assert Circle(x, y, radius).draw() is None
 

@@ -15,7 +15,7 @@ values = [(0, 0, 10, 10),
 
 @pytest.mark.parametrize('values', values)
 def test_rectangle_good(values):
-    """This test is needed to make sure the method draw() work with correct arguments"""
+    """This test is needed to make sure the method draw() works with correct arguments"""
     x, y, height, width = values
     assert Rectangle(x, y, height, width).draw() is None
 

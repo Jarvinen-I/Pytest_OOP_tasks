@@ -15,7 +15,7 @@ coordinates = [(1, 1, 3, 1, 2, 5),
 
 @pytest.mark.parametrize('coordinates', coordinates)
 def test_triangle_good(coordinates):
-    """This test is needed to make sure the method draw() work with correct arguments"""
+    """This test is needed to make sure the method draw() works with correct arguments"""
     x1, y1, x2, y2, x3, y3 = coordinates
     assert Triangle(x1, y1, x2, y2, x3, y3).draw() is None
 

@@ -12,7 +12,7 @@ shape = [c, t, r]
 
 @pytest.mark.parametrize('shape', shape)
 def test_add_shape(shape):
-    """This test is needed to make sure the method add_shape() work with correct argument"""
+    """This test is needed to make sure the method add_shape() works with correct argument"""
     assert engine.add_shape(shape) is None
 
 
@@ -31,7 +31,7 @@ color = ['black', 'yellow', 'white']
 
 @pytest.mark.parametrize('color', color)
 def test_set_color(color):
-    """This test is needed to make sure the method set_color() work with correct argument"""
+    """This test is needed to make sure the method set_color() works with correct argument"""
     engine.set_color(color)
     assert engine.color == color
 
@@ -47,7 +47,7 @@ def test_set_wrong_color(wrong_color):
 
 
 def test_add_shapes():
-    """This test is needed to make sure the method add_shapes() work with correct arguments"""
+    """This test is needed to make sure the method add_shapes() works with correct arguments"""
     assert engine.add_shapes(c, t, r) is None
 
 
@@ -58,13 +58,13 @@ wrong_shapes = [(c, t, Rectangle),
 
 @pytest.mark.parametrize('wrong_shapes', wrong_shapes)
 def test_add_wrong_shapes(wrong_shapes):
-    """This test is needed to make sure the method add_shape() work with correct arguments"""
+    """This test is needed to make sure the method add_shape() doesn't work with wrong arguments"""
     with pytest.raises(ValueError):
         engine.add_shapes(wrong_shapes)
 
 
 def test_draw():
-    """This test is needed to make sure the method draw() work with correct arguments"""
+    """This test is needed to make sure the method draw() works with correct arguments"""
     en = Engine2D()
     cc = Circle(0, 1, 5)
     tt = Triangle(1, 1, 3, 1, 2, 5)
